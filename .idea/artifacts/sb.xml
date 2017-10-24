@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="sb">
+    <output-path>$PROJECT_DIR$/../SpringBootDemo/out/artifacts/sb</output-path>
+    <root id="root" />
+  </artifact>
+</component>
