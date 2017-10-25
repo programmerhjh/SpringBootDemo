@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @EnableAutoConfiguration
-public class SpringBootHelloWorld {
+public class SpringBootHelloWorldController {
 
     @RequestMapping("hello")
     public String hello(){
