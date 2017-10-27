@@ -19,6 +19,15 @@ public class SpringBootHelloWorldController {
         return "hello.SpringBoot!!";
     }
 
+    @RequestMapping("helloWorld")
+    public String helloWorld(){
+        return "SpringBoot HelloWorld!!!";
+    }
+    
+    /**
+      * @author 洪家豪
+      * @Date 2017/10/25 14:46
+      */
     @RequestMapping("/word/{name}")
     public String word(@PathVariable String name){
         return "word--spring boot:" + name;
