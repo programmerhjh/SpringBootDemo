@@ -33,7 +33,19 @@ public class User implements Serializable{
     @Column(name = "introduce")
     private String introduce;
 
+    public User() {
+    }
 
+    public User(String uname, String upassword, Integer uage, String uaddress, String udate, String constellation, String phone, String introduce) {
+        this.uname = uname;
+        this.upassword = upassword;
+        this.uage = uage;
+        this.uaddress = uaddress;
+        this.udate = udate;
+        this.constellation = constellation;
+        this.phone = phone;
+        this.introduce = introduce;
+    }
 
     public Integer getUid() {
         return uid;

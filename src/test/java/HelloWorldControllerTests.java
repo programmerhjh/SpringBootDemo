@@ -7,6 +7,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import prv.hjh.boot.Application;
 import prv.hjh.boot.restcontroller.SpringBootHelloWorldController;
 
 /**
@@ -14,7 +15,7 @@ import prv.hjh.boot.restcontroller.SpringBootHelloWorldController;
  *         Created by HJH on 2017/10/24.
  */
 
-@SpringBootTest
+@SpringBootTest(classes = Application.class)
 public class HelloWorldControllerTests {
     private MockMvc mockMvc;
 
