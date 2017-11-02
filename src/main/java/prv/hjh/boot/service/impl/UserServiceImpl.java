@@ -1,6 +1,8 @@
 package prv.hjh.boot.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import prv.hjh.boot.dao.UserRepository;
@@ -15,12 +17,16 @@ import java.util.List;
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
-public class UserServiceImpl implements UserService{
+//keyGenerator 指定自定义的生成缓存中的key的方法，cacheNames 定义该事务完成后的数据在缓存中的存放位置
+@CacheConfig(cacheNames = "users",keyGenerator = "getKeyGenerator")
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
 
     @Override
+    //@Cacheable 写进redis缓存
+    @Cacheable
     public User findById(Integer uid) {
         return userRepository.findOne(uid);
     }
