@@ -1,12 +1,13 @@
 package prv.hjh.boot.domain;
-
+import javax.persistence.Entity;
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
+import java.util.List;
 
 /**
+ * 用于 JPA 的实体类
  * @author 洪家豪
- *         Created by HJH on 2017/10/24.
+ * Created by HJH on 2017/10/24.
  */
 @Entity
 @Table(name = "user")
@@ -32,6 +33,17 @@ public class User implements Serializable{
     private String phone;
     @Column(name = "introduce")
     private String introduce;
+
+    @OneToMany(mappedBy = "user")
+    private List<Article> articles;
+
+    public List<Article> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
+    }
 
     public User() {
     }

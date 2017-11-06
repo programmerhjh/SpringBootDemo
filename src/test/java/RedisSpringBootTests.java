@@ -75,8 +75,4 @@ public class RedisSpringBootTests {
         logger.info("从redis缓存取数据并打印成日志" + string);
     }
 
-
-
-
-
 }
