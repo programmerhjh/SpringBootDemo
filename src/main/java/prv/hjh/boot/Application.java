@@ -10,9 +10,9 @@ import org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter;
  * @author 洪家豪
  * Created by HJH on 2017/10/24.
  */
-@SpringBootApplication
 // 扫描Mapper接口的注解
 @MapperScan(basePackages = "prv.hjh.boot.mapper")
+@SpringBootApplication
 public class Application {
 
     public static void main(String[] args) {
