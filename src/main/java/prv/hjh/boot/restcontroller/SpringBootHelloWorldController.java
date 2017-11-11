@@ -33,5 +33,8 @@ public class SpringBootHelloWorldController {
         return "word--spring boot:" + name;
     }
 
+    @RequestMapping("{id}")
+    public String getId(@PathVariable String id){return id;}
+
 
 }
