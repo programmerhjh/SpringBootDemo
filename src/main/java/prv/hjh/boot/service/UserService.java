@@ -26,4 +26,22 @@ public interface UserService {
      * @return 返回User列表
      */
     List<User> findAll();
+
+    /**
+     * 保存用户信息
+     * @param user
+     */
+    void save(User user);
+
+    /**
+     * 修改用户信息
+     * @param user
+     */
+    void edit(User user);
+
+    /**
+     * 删除用户
+     * @param uid
+     */
+    void delete(Integer uid);
 }

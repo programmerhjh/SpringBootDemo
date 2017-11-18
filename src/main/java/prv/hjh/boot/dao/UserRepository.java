@@ -1,5 +1,6 @@
 package prv.hjh.boot.dao;
 
+import org.apache.ibatis.annotations.Insert;
 import org.springframework.data.jpa.repository.JpaRepository;
 import prv.hjh.boot.domain.User;
 import prv.hjh.boot.resultmap.ArticleForUser;
