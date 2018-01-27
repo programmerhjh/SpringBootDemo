@@ -1,10 +1,8 @@
-package prv.hjh.boot.restcontroller;
+package prv.hjh.boot.controller;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import prv.hjh.boot.domain.User;
 import prv.hjh.boot.service.UserService;

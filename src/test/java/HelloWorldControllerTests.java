@@ -8,7 +8,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import prv.hjh.boot.Application;
-import prv.hjh.boot.restcontroller.SpringBootHelloWorldController;
+import prv.hjh.boot.controller.SpringBootHelloWorldController;
 
 /**
  * @author 洪家豪

@@ -1,4 +1,4 @@
-package prv.hjh.boot.restcontroller;
+package prv.hjh.boot.controller;
 
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;

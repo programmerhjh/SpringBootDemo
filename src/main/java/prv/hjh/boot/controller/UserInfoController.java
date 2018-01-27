@@ -1,4 +1,4 @@
-package prv.hjh.boot.restcontroller;
+package prv.hjh.boot.controller;
 
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;
