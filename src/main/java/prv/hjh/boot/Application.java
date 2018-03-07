@@ -9,8 +9,10 @@ import org.springframework.boot.context.embedded.tomcat.TomcatConnectorCustomize
 import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @author 洪家豪
@@ -22,6 +24,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @MapperScan(basePackages = "prv.hjh.boot.mapper")
 // 添加Servlet的支持
 @SpringBootApplication
+@Configuration
+@EnableSwagger2
 public class Application extends SpringBootServletInitializer{
 
     public static void main(String[] args) {

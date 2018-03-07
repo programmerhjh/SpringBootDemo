@@ -3,11 +3,16 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../SpringBootDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SpringBootDemoswagger/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false">
-    <output url="file://$PROJECT_DIR$/../SpringBootDemo/out" />
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

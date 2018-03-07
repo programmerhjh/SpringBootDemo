@@ -10,7 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>SpringBootDemo</groupId>
     <artifactId>SpringBootDemo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>SpringBootDemoswagger</module>
+    </modules>
 
 
     <properties>
@@ -132,6 +136,19 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.8.0</version>
         </dependency>
 
         <!-- SpringBoot mongoDB -->

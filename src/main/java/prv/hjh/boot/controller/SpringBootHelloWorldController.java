@@ -1,6 +1,5 @@
 package prv.hjh.boot.controller;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@EnableAutoConfiguration
 public class SpringBootHelloWorldController {
 
     @RequestMapping("hello")
@@ -32,9 +30,5 @@ public class SpringBootHelloWorldController {
     public String word(@PathVariable String name){
         return "word--spring boot:" + name;
     }
-
-    @RequestMapping("{id}")
-    public String getId(@PathVariable String id){return id;}
-
 
 }
